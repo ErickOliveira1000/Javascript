@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo com a página</title>
+
+    <style>
+        .titulo {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(150, 184, 29);
+        }
+
+        #texto {
+            height: 48px;
+            border-radius: 4px;
+            background-color: rgb(113, 228, 228);
+            width: 300px;
+            font-size: 25px;
+        }
+        
+        #d {
+            color: #189e07;
+            font-size: 20px;
+        }
+
+        #botao-curtir {
+            background-color: rgb(41, 44, 233);
+            color: beige;
+            font-size: 25px;
+            height: 54px;
+            width: 200px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="titulo">Gosta de Javascript? Escreva o seu Nome e curta a Página!!!</h1>
+    <p id="aviso"></p>
+    <input type="text" id="texto" placeholder="Digite seu nome"/>
+    <button  id="botao-curtir" name="meu-botao">Curtir</button>  
+    <div id="d"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
