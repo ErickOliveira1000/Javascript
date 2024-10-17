@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Rede Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+    <header>
+        <img src="img/logors.png" alt="amigos" width="50px">
+        <div>OS AMIGOS</div>
+    </header>
+
+    <div id="d"></div>
+
+    <main class="main">
+        <button id="sair">SAIR</button>
+        <!--Formulário de envio de postagem-->
+        <div class="newPost">
+            <div class="infoUser">
+                <div class="imgUser"></div>
+                <strong id="nomeDeUsuarioAtual">Novo Usuário</strong>
+            </div>
+
+            <form action="" class="formPost" id="formPost">
+                <textarea name="textarea" id="textarea"  placeholder="Vamos mudar o mundo?" ></textarea>
+
+                <div class="iconsAndButton">
+                    <div class="icons">
+                        <button class="btnFileForm"><img src="img/adicionar-imagem.png" alt="Acicionar uma imagem" width="30px"></button>
+                        <button class="btnFileForm"><img src="img/gif.png" alt="Acicionar um gif" width="30px"></button>
+                        <button class="btnFileForm"><img src="img/carregar-video.png" alt="Acicionar um video" width="30px"></button>
+
+                    </div>
+
+                    <button type="submit" id="publicar"  class="btnSubmitForm">Publicar</button>
+                </div>
+            </form>
+        </div>
+
+        <ul class="posts" id="posts">
+
+
+        </ul>
+    </main>
+
+
+
+    <script type="module" src="./Control/PostForm.js"></script>
+
+</body>
+</html>
